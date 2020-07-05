@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:padding="3dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/num_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlue"/>
+
+    </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/image_user"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:layout_toEndOf="@+id/linear"
+            android:layout_below="@+id/linear"
+            android:src="@drawable/user_name" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_below="@+id/image_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="User Name"
+        android:textColor="@color/colorBlue" />
+
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.technosaab.newdavai.Fragments.CreateAdsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:text="@string/add_your_ads" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                app:layout_constraintVertical_bias="0.0">
+            </android.support.v4.view.ViewPager>
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:id="@+id/imageView6"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="110dp"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--app:cardCornerRadius="15dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="@drawable/app_bg"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textColor="#106d89"-->
+                        <!--android:textSize="20sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_margin="15dp"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:text="@string/ads"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="150dp"-->
+                        <!--android:layout_height="90dp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginStart="40dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:src="@drawable/logo" />-->
+                <!--</LinearLayout>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="@string/ads_will_be"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="@string/devai_home_page"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="7dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/search_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/upload_ads_image"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:padding="3dp"
+                    android:background="@drawable/et_bg2"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/upload_file"/>
+                    <TextView
+                        android:text="@string/upload_ada_image"
+                        android:textColor="@color/colorBlue"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <TextView
+                    android:text="@string/image_size"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/ads_description"
+                    android:layout_gravity="center"
+                    android:layout_width="250dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="10dp"
+                    android:textSize="15sp"
+                    android:gravity="top"
+                    android:paddingTop="3dp"
+                    android:hint="@string/description"
+                    android:background="@drawable/et_bg2"
+                    android:layout_height="50dp"/>
+                    <!--<ImageView-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="22dp"-->
+                        <!--android:src="@drawable/calendar"/>-->
+                    <!--<TextView-->
+                        <!--android:text="@string/reserve_ads_day"-->
+                        <!--android:textColor="@color/colorBlue"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:layout_marginStart="5dp"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+
+                <TextView
+                    android:text="@string/ads_will_run"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:padding="3dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                     <TextView
+                         android:text="@string/ads_will_spend"
+                         android:layout_gravity="center"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/ads_coast"
+                        android:text="500 SAR"
+                        android:textColor="@color/colorBlue"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:src="@drawable/money_bag"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/pay_via"
+                android:text="@string/create"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/pay_via_bg"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_width="140dp"
+                android:layout_height="35dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/payPal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/paypal"/>
+                <ImageView
+                    android:id="@+id/visa"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/visa"/>
+                <ImageView
+                    android:id="@+id/master_card"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mastercard"/>
+                <ImageView
+                    android:id="@+id/am_express"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/american_express"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

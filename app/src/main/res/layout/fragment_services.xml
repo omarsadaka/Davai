@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.technosaab.newdavai.Fragments.ServicesFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_cover"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:background="@drawable/app_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+
+            <!--<TextView-->
+                <!--android:layout_below="@+id/card_cover"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="@string/cover"-->
+                <!--android:textColor="#187197"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_logo"
+        android:layout_below="@+id/card_cover"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="15dp">
+
+        <RelativeLayout
+            android:background="@drawable/app_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo" />
+            <!--<TextView-->
+                <!--android:text="@string/logo"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="15sp"-->
+                <!--android:textColor="#187197"-->
+                <!--android:layout_below="@+id/card_logo"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/brand_name"
+        android:layout_below="@+id/card_cover"
+        android:layout_toEndOf="@+id/card_logo"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/vendor_name"
+        android:textColor="@color/colorBlue"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/relativeLayout9"
+        android:orientation="horizontal"
+        android:layout_below="@+id/brand_name"
+        android:layout_alignParentEnd="true"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="3dp"
+        android:layout_marginEnd="10dp">
+
+        <ImageView
+            android:id="@+id/client_rat"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_margin="7dp"
+            android:src="@drawable/support2" />
+
+        <LinearLayout
+            android:id="@+id/logo"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <ImageView
+                android:id="@+id/heart_logo"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="3dp"
+                android:src="@drawable/h_heart" />
+
+            <TextView
+                android:id="@+id/num_fav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:layout_gravity="center"
+                android:text="00"
+                android:textColor="@color/colorBlue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+            <ImageView
+                android:id="@+id/star_logo"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_margin="3dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/star_rate" />
+
+            <TextView
+                android:id="@+id/star_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                android:padding="2dp"
+                android:text="00"
+                android:textColor="@color/colorBlue" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_below="@+id/card_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/search_bg">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/services_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:padding="5dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+                <ProgressBar
+                    android:id="@+id/service_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:progressTint="@color/colorBlue"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/reserve"
+                    android:layout_below="@+id/services_recycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/pressed_top_buttob_bg"
+                    android:text="@string/reserve"
+                    android:textColor="@color/colorWhite" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

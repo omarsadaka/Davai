@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "622619875269",
+    "firebase_url": "https://davaiapp-855fa.firebaseio.com",
+    "project_id": "davaiapp-855fa",
+    "storage_bucket": "davaiapp-855fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622619875269:android:de81b6a92f2936cb",
+        "android_client_info": {
+          "package_name": "com.technosaab.newdavai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622619875269-jub7rs639gg4mjejuksuu4dkc2bph1p6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVIH8DhhIs6vkg35dWmWrTRZjBN0svVeA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

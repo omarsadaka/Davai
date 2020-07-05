@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031">
+<!--<ImageView-->
+    <!--android:id="@+id/support_icon"-->
+    <!--android:layout_width="25dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:src="@drawable/support"-->
+    <!--android:layout_marginStart="5dp"/>-->
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="22 June 2018"
+            android:textColor="@color/colorBrown" />
+        <!--<TextView-->
+            <!--android:id="@+id/time_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="10:30 am"-->
+            <!--android:textColor="@color/colorBrown"-->
+            <!--android:layout_toEndOf="@+id/date_text"-->
+            <!--android:layout_marginStart="10dp"/>-->
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_margin="3dp"
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:src="@drawable/edit"
+            android:layout_alignParentEnd="true"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_Image"
+            android:layout_toStartOf="@+id/edit_icon"
+            android:layout_marginTop="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/card_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_name" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/vendor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_Image"
+            android:layout_alignEnd="@+id/card_Image"
+            android:text="User Name"
+            android:textColor="@color/colorBlue" />
+        <!--<LinearLayout-->
+            <!--android:id="@+id/service_layout"-->
+            <!--android:padding="2dp"-->
+            <!--android:paddingEnd="15dp"-->
+            <!--android:paddingStart="15dp"-->
+            <!--android:layout_below="@+id/date_text"-->
+            <!--android:layout_alignStart="@+id/date_text"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:orientation="vertical"-->
+            <!--android:background="@drawable/tv_bg"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/face_mask"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Face Masks"-->
+                <!--android:textColor="@color/colorBlue"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/hair_cut"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Hair Cut"-->
+                <!--android:textColor="@color/colorBlue"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/full_massage"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Full Massage "-->
+                <!--android:textColor="@color/colorBlue"-->
+                <!--android:layout_gravity="center"/>-->
+
+        <!--</LinearLayout>-->
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_below="@+id/card_Image"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comp"
+            android:textColor="@color/colorBlue"/>
+        <View
+            android:layout_below="@+id/state"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorBrown"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
